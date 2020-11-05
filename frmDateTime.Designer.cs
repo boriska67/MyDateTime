@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDateTime));
             this.btnShowDateTime = new System.Windows.Forms.Button();
             this.btnWriteDateTimeToFile = new System.Windows.Forms.Button();
             this.btnReadDateTimeFRomFile = new System.Windows.Forms.Button();
@@ -97,6 +98,7 @@
             this.Controls.Add(this.btnReadDateTimeFRomFile);
             this.Controls.Add(this.btnWriteDateTimeToFile);
             this.Controls.Add(this.btnShowDateTime);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmDateTime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
