@@ -39,7 +39,7 @@ namespace MyDateTime
             using (SaveFileDialog save = new SaveFileDialog())
             {
                 save.FileName = "test.txt";
-                save.InitialDirectory = "c:\\test\\readwrite";
+                save.InitialDirectory = @"c:\test\readwrite";
                 save.Filter = "txt files (*.txt)|*.txt|log files (*.log)|*.log";
                 save.OverwritePrompt = false;
 
@@ -74,7 +74,7 @@ namespace MyDateTime
                 string fileContent = string.Empty;
                 string filePath = string.Empty;
 
-                openFileDialogDateTime.InitialDirectory = "c:\\test\\readwrite";
+                openFileDialogDateTime.InitialDirectory = @"c:\test\readwrite";
                 openFileDialogDateTime.RestoreDirectory = true;
                 openFileDialogDateTime.Filter = "txt files (*.txt)|*.txt|log files (*.log)|*.log";
                 openFileDialogDateTime.FilterIndex = 1;
